@@ -49,6 +49,7 @@ export async function POST(request: Request) {
     - **Objetivo:** Estabelecer autoridade, gerar discussão profissional e networking, mostre o valor do tópico com detalhes.
     - **Formato:** Texto profissional e bem articulado. Comece com uma estatística, uma pergunta provocativa ou uma declaração forte. Use bullet points (listas) para destacar benefícios ou pontos-chave. Evite emojis excessivos.
     - **Finalização:** Termine com uma pergunta aberta para estimular o debate na seção de comentários.
+    - **Hashtags:** Incluir um bloco de 3 a 5 hashtags no final, misturando hashtags populares com outras de nicho.
 
   **Formato da Saída (Regra mais importante):**
   - A resposta DEVE ser um objeto JSON puro (raw JSON).
@@ -67,7 +68,7 @@ export async function POST(request: Request) {
     {
       "twitter": "Sentindo a sobrecarga da semana? Respire fundo. Nosso novo app de meditação guiada está aqui para trazer 5 minutos de paz ao seu dia. Link na bio! #Mindfulness #Meditação",
       "instagram": "Sua pausa para a paz chegou. ✨\\n\\nNós sabemos que a vida é agitada. Por isso, criamos um santuário no seu bolso. Com sessões de 5, 10 ou 15 minutos, encontre seu centro onde quer que esteja.\\n\\nPronto para transformar seu dia?\\n\\n#MeditaçãoGuiada #SaudeMental #BemEstar #Ansiedade #PazInterior #Autocuidado #AppDeMeditacao",
-      "linkedin": "A produtividade no ambiente de trabalho está diretamente ligada à clareza mental.\\n\\nUm estudo recente mostrou que micro-pausas para meditação podem aumentar o foco em até 15%.\\n\\nNosso novo aplicativo foi projetado para profissionais ocupados, oferecendo sessões de meditação que se encaixam perfeitamente entre reuniões.\\n\\nComo sua equipe prioriza a saúde mental para melhorar o desempenho? Vamos discutir nos comentários."
+      "linkedin": "A produtividade no ambiente de trabalho está diretamente ligada à clareza mental.\\n\\nUm estudo recente mostrou que micro-pausas para meditação podem aumentar o foco em até 15%.\\n\\nNosso novo aplicativo foi projetado para profissionais ocupados, oferecendo sessões de meditação que se encaixam perfeitamente entre reuniões.\\n\\nComo sua equipe prioriza a saúde mental para melhorar o desempenho? Vamos discutir nos comentários.\\n\\n#Meditação #SaúdeMental #Produtividade"
     }
     \`\`\`
   
