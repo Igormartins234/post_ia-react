@@ -40,17 +40,22 @@ const ContentGeneratorForm = () => {
 
       if (!response.ok) {
         throw new Error(data.error || 'Ocorreu um erro ao gerar o conteúdo.');
-      }
+      } 
       
       setGeneratedContent(data);
 
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
+    } catch (err: unknown) { // Mude de 'any' para 'unknown'
+    let errorMessage = 'Ocorreu um erro inesperado ao conectar com a API.';
+    if (err instanceof Error) {
+      errorMessage = err.message;
+    } else if (typeof err === 'string') {
+      errorMessage = err;
     }
-  };
-
+    setError(errorMessage);
+  } finally {
+    setIsLoading(false);
+  }
+  }
   return (
     <div className="mt-10 w-full">
 
